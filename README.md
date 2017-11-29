@@ -1,5 +1,5 @@
 # dysms
-Aliyun SMS SDK for CakePHP
+## Aliyun SMS SDK for CakePHP
 
 1. https://ak-console.aliyun.com/ 从这里找到ACCESS_ID和ACCESS_KEY ，如果没有，生成一个
 2. 修改/config/paths.php,最后加入
