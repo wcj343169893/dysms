@@ -13,9 +13,6 @@ class SmsComponent extends Component
 {
 
     var $acsClient = null;
-    // TODO 此处需要替换成开发者自己的AK (https://ak-console.aliyun.com/)
-    var $ACCESS_ID="";
-    var $ACCESS_KEY="";
 
     public function send()
     {
@@ -40,11 +37,10 @@ class SmsComponent extends Component
         $domain = "dysmsapi.aliyuncs.com";
         
         // TODO 此处需要替换成开发者自己的AK (https://ak-console.aliyun.com/)
-        $accessKeyId = $this->ACCESS_ID; // AccessKeyId
+        $accessKeyId = getenv("OSS_ACCESS_ID"); // AccessKeyId
         
-        $accessKeySecret = $this->ACCESS_KEY; // AccessKeySecret
-                                                     
-        // 暂时不支持多Region
+        $accessKeySecret = getenv("OSS_ACCESS_KEY"); // AccessKeySecret
+                                                     // 暂时不支持多Region
         $region = "cn-hangzhou";
         
         // 服务结点
