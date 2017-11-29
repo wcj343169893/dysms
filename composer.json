@@ -1,28 +1,26 @@
 {
-    "name": "cakephp/aliyun-dysms",
-    "description": "DySms plugin for CakePHP",
-    "keywords": [ "aliyun", "SMS", "sdk" ],
-    "type": "cakephp-plugin",
-    "homepage": "https://www.aliyun.com/product/sms",
-    "license": "MIT",
-    "authors": [
-    	{
-            "name": "Aliyuncs",
-            "homepage": "https://www.aliyun.com"
-        },
-        {
-            "name": "文朝军",
-            "homepage": "https://www.cjblog.org"
-        }
-    ],
-    "require": {
-    	"php": ">=5.6.0",
-        "cakephp/cakephp": "^3.4"
-    },
-    "autoload": {
-        "psr-4": {
-         	"Aliyun\\": "lib/",
-            "DySms\\": "src"
-        }
-    },"minimum-stability": "beta"
+  "name" : "wcj343169893/aliyun-dysms",
+  "description" : "DySms plugin for CakePHP",
+  "require" : {
+    "php" : ">=5.6.0",
+    "cakephp/cakephp" : "^3.4"
+  },
+  "license" : "MIT",
+  "keywords" : [ "aliyun", "SMS", "sdk" ],
+  "minimum-stability" : "beta",
+  "autoload" : {
+    "psr-4" : {
+      "Aliyun\\" : "lib/",
+      "DySms\\" : "src"
+    }
+  },
+  "type" : "cakephp-plugin",
+  "homepage" : "https://www.aliyun.com/product/sms",
+  "authors" : [ {
+    "name" : "Aliyuncs",
+    "homepage" : "https://www.aliyun.com"
+  }, {
+    "name" : "文朝军",
+    "homepage" : "https://www.cjblog.org"
+  } ]
 }
