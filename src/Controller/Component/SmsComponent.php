@@ -14,8 +14,8 @@ class SmsComponent extends Component
 
     var $acsClient = null;
     // TODO 此处需要替换成开发者自己的AK (https://ak-console.aliyun.com/)
-    var $ACCESS_ID="fHN132dFcZTPFbU0";
-    var $ACCESS_KEY="Lzuczedt5bskGdBF3gHnnFDdLUU5QJ";
+    var $ACCESS_ID="";
+    var $ACCESS_KEY="";
 
     public function send()
     {
