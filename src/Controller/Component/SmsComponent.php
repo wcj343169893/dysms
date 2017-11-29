@@ -1,5 +1,5 @@
 <?php
-namespace App\Controller\Component;
+namespace DySms\Controller\Component;
 
 use Cake\Controller\Component;
 use Aliyun\Core\Profile\DefaultProfile;
@@ -9,18 +9,18 @@ use Aliyun\Api\Sms\Request\V20170525\SendSmsRequest;
 use Aliyun\Api\Sms\Request\V20170525\QuerySendDetailsRequest;
 use Aliyun\Core\Config;
 
-class DySmsComponent extends Component
+class SmsComponent extends Component
 {
 
     var $acsClient = null;
     // TODO 此处需要替换成开发者自己的AK (https://ak-console.aliyun.com/)
-    var $ACCESS_ID="";
-    var $ACCESS_KEY="";
+    var $ACCESS_ID="fHN132dFcZTPFbU0";
+    var $ACCESS_KEY="Lzuczedt5bskGdBF3gHnnFDdLUU5QJ";
 
     public function send()
     {
-        $this->sendSms("阿里云短信测试专用", "SMS_114305031", "13500135000", [
-            "code" => "12345"
+        $this->sendSms("阿里云短信测试专用", "SMS_114305031", "15986613315", [
+            "code" => "13345"
         ]);
     }
 

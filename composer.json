@@ -1,27 +1,28 @@
 {
-    "name": "aliyuncs/aliyun-dysms-php-sdk",
-    "description": "Aliyun SMS SDK for PHP",
+    "name": "cakephp/aliyun-dysms",
+    "description": "DySms plugin for CakePHP",
     "keywords": [ "aliyun", "SMS", "sdk" ],
-    "type": "library",
-    "license": "Apache-2.0",
+    "type": "cakephp-plugin",
     "homepage": "https://www.aliyun.com/product/sms",
+    "license": "MIT",
     "authors": [
-        {
+    	{
             "name": "Aliyuncs",
             "homepage": "https://www.aliyun.com"
+        },
+        {
+            "name": "文朝军",
+            "homepage": "https://www.cjblog.org"
         }
     ],
     "require": {
-        "php": ">=5.5.0"
+    	"php": ">=5.6.0",
+        "cakephp/cakephp": "^3.4"
     },
-    "require-dev": {
-        "phpunit/phpunit": "~4.0"
-    },
-    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Aliyun\\": "lib/",
-            "Aliyun\\Test\\": "tests/"
+         	"Aliyun\\": "lib/",
+            "DySms\\": "src"
         }
-    }
+    },"minimum-stability": "beta"
 }
