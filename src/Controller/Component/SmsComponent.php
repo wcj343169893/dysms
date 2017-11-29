@@ -37,9 +37,9 @@ class SmsComponent extends Component
         $domain = "dysmsapi.aliyuncs.com";
         
         // TODO 此处需要替换成开发者自己的AK (https://ak-console.aliyun.com/)
-        $accessKeyId = getenv("OSS_ACCESS_ID"); // AccessKeyId
+        $accessKeyId = getenv("ACCESS_ID"); // AccessKeyId
         
-        $accessKeySecret = getenv("OSS_ACCESS_KEY"); // AccessKeySecret
+        $accessKeySecret = getenv("ACCESS_KEY"); // AccessKeySecret
                                                      // 暂时不支持多Region
         $region = "cn-hangzhou";
         
