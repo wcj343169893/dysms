@@ -19,7 +19,7 @@ class SmsComponent extends Component
 
     public function send()
     {
-        $this->sendSms("阿里云短信测试专用", "SMS_114305031", "15986613315", [
+        $this->sendSms("阿里云短信测试专用", "SMS_114305031", "13500135000", [
             "code" => "13345"
         ]);
     }
